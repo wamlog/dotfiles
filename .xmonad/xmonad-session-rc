@@ -1,0 +1,7 @@
+setxkbmap -option ctrl:nocaps
+xset s off -dpms
+feh --bg-scale ~/Downloads/wallpaper.jpg
+xmobar &
+udiskie -t &
+nm-applet &
+trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --widthtype percent --width 5 --height 20 --transparent true --tint 0x000000 --monitor primary &
