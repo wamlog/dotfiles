@@ -5,3 +5,5 @@ xmobar &
 udiskie -t &
 nm-applet &
 trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --widthtype percent --width 5 --height 20 --transparent true --tint 0x000000 --monitor primary &
+sh -c '/usr/bin/nvidia-settings --load-config-only'
+sh -c 'if ! [ -e "/usr/bin/ibus-daemon" ] && [ "x$XDG_SESSION_TYPE" = "xwayland" ] ; then exec env IM_CONFIG_CHECK_ENV=1 im-launch true; fi'
